@@ -1,11 +1,50 @@
-body{
+/* CSS utilizado para estilização do HTML da barbearia alura */
+
+.principal{
     background: #CCCCCC;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
 }
 
 p {
     text-align: center;
 }
 
+#missao {
+    font-size: 20px
+}
+
 em strong {
     color: red;
+}
+
+#banner{
+    width: 100%;
+}
+
+.item {
+    font-style: italic;
+}
+
+.beneficios{
+    background: #FFFFFF;
+    padding: 20px;
+}
+
+.imagemBeneficios{
+    width: 50%;
+}
+
+ul{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+h2 {
+    text-align: center;
 }
