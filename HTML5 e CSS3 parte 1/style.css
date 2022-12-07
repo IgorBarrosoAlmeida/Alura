@@ -1,11 +1,15 @@
 /* CSS utilizado para estilização do HTML da barbearia alura */
 
+.titulo-principal{
+    padding-left: 20px;
+}
+
 .principal{
     background: #CCCCCC;
     padding: 30px;
 }
 
-h1 {
+.titulo-centralizado {
     text-align: center;
 }
 
@@ -43,8 +47,4 @@ ul{
     vertical-align: top;
     width: 20%;
     margin-right: 15%;
-}
-
-h2 {
-    text-align: center;
 }
