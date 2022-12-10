@@ -102,7 +102,7 @@ form {
     margin: 40px 0;
 }
 
-form label, form p {
+.texto-padrao {
     display: block;
     font-size: 20px;
     margin-bottom: 10px;
@@ -117,4 +117,5 @@ form label, form p {
 
 .checkbox {
     margin: 20px 0;
+    display: block;
 }
