@@ -29,7 +29,7 @@ nav a{
 }
 
 nav a:hover{
-    color: #C78C19;
+    color: orange;
     text-decoration: underline;
 }
 
@@ -53,13 +53,13 @@ nav a:hover{
 }
 
 .produtos li:hover{
-    color: #C78C19;
-    border-color: #C78C19;
+    color: orange;
+    border-color: orange;
 }
 
 .produtos li:active{
-    color: #088C19;
-    border-color: #088C19;
+    color: #d18606;
+    border-color: #d18606;
 }
 
 .produtos li:hover h2{
@@ -119,4 +119,22 @@ form {
     margin: 20px 0;
     display: block;
     font-size: 20px;
+}
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    transition: 1s transform;
+}
+
+.enviar:hover{
+    background: darkorange;
+    transform: scale(1.1);
+    cursor: pointer;
 }
