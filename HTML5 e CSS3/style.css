@@ -1,12 +1,18 @@
+/* 
+ * @File style.css
+ * @Author Igor Barroso Almeida
+ * @Brief Arquivo de estilo principal
+ * do projeto, contem o estilo de: index.html,
+ * contato.html e produtos.htmls
+ * @Date 12/12/2022 
+*/
+
+/* Definindo fonte padrão */
 body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.main-contato {
-    width: 940px;
-    margin: 0 auto;
-}
-
+/* Cabeçalho padrão */
 header{
     background: #BBBBBB;
     padding: 20px 0;
@@ -42,54 +48,7 @@ nav a:hover{
     text-decoration: underline;
 }
 
-.produtos {
-    width: 940px;
-    margin: 0 auto;
-    padding: 50px 0;
-}
-
-.produtos li{
-    text-align: center;
-    display: inline-block;
-    width: 30%;
-    vertical-align: top;
-    margin: 0 1.5%;
-    padding: 30px 20px;
-    box-sizing: border-box;
-    /* Detalhes da borda */
-    border: 2px solid #000000;
-    border-radius: 10px;
-}
-
-.produtos li:hover{
-    color: orange;
-    border-color: orange;
-}
-
-.produtos li:active{
-    color: #d18606;
-    border-color: #d18606;
-}
-
-.produtos li:hover h2{
-    font-size: 34px;
-}
-
-.produtos h2{
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.produto-desc{
-    font-size: 18px;
-}
-
-.produto-preco{
-    font-size: 22px;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
+/* Rodapé padrão */
 footer{
     text-align: center;
     background: url("../Imagens/bg.jpg");
@@ -102,66 +61,7 @@ footer{
     margin-top: 20px;
 }
 
-form {
-    margin: 40px 0;
-}
-
-.texto-padrao {
-    display: block;
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.input-padrao {
-    display: block;
-    margin-bottom: 20px;
-    padding: 10px 25px;
-    width: 50%;
-}
-
-.checkbox {
-    margin: 20px 0;
-    display: block;
-    font-size: 20px;
-}
-
-.enviar {
-    width: 40%;
-    padding: 15px 0;
-    background: orange;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    border: none;
-    border-radius: 25px;
-    transition: 1s transform;
-}
-
-.enviar:hover{
-    background: darkorange;
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
-table {
-    margin: 20px 0 40px;
-    border-collapse: inherit;
-    border: 1px solid #555555;
-    border-radius: 10px;
-}
-
-thead {
-    background: #555555;
-    color: white;
-    font-weight: bold;
-}
-
-td, th{
-    padding: 8px 15px;
-    border: 1px solid #555555;
-}
-
-/* ---CSS da pagina inicial--- */
+/* CSS da pagina inicial */
 .banner {
     width: 100%;
 }
@@ -257,6 +157,121 @@ em {
     margin: 2em auto;
 }
 
+/* CSS da pagina de produtos */
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li{
+    text-align: center;
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    /* Detalhes da borda */
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.produtos li:hover{
+    color: orange;
+    border-color: orange;
+}
+
+.produtos li:active{
+    color: #d18606;
+    border-color: #d18606;
+}
+
+.produtos li:hover h2{
+    font-size: 34px;
+}
+
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-desc{
+    font-size: 18px;
+}
+
+.produto-preco{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* CSS da pagina de contato */
+.main-contato {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+
+.texto-padrao {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.input-padrao {
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+    display: block;
+    font-size: 20px;
+}
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    transition: 1s transform;
+}
+
+.enviar:hover{
+    background: darkorange;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+table {
+    margin: 20px 0 40px;
+    border-collapse: inherit;
+    border: 1px solid #555555;
+    border-radius: 10px;
+}
+
+thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    padding: 8px 15px;
+    border: 1px solid #555555;
+}
+
+/* Ajustando responsividade da pagina principal */
 @media screen and (max-width: 450px){
     .caixa, .principal, .conteudo-beneficios, .conteudo-mapa, .video{
         width: auto;
@@ -311,12 +326,4 @@ em {
         position: static;
         text-align: center;
     }
-    /*
-    .produtos {
-        width: auto;
-    }
-
-    .produtos li {
-        display: block;
-    }*/
 }
