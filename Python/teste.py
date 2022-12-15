@@ -1,0 +1,1 @@
+print("Ola mundo", "estou", "começando", "a", "aprender python", sep="__", end="!\n")
