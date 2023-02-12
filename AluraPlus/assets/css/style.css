@@ -139,3 +139,11 @@ body {
     color: var(--cinza-secundario);
     line-height: 21px;
 }
+
+.lista__link:hover {
+    color: var(--cinza-secundario);
+}
+
+.lista__link:active {
+    color: var(--botao-azul);
+}
