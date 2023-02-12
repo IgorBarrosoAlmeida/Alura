@@ -9,14 +9,14 @@
 body {
     color: var(--branco-principal);
     background-color: var(--cor-de-fundo);
-    font-family: 'Inter';
+    font-family: var(--font-principal);
     font-size: 16px;
     font-weight: 400;
 }
 
 /* Primeira seção */
 .container {
-    height: 90vh;
+    height: 100vh;
     display: grid;
     grid-template-columns: 50% 50%;
 }
@@ -92,4 +92,50 @@ body {
 
 .container__descricao {
     padding: 2em;
+}
+
+/* Seção de dispositivos */
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    margin: 5em 0;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--branco-principal);
+}
+
+.lista__item {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--branco-principal);
+}
+
+/* rodapé */
+.rodape {
+    text-align: center;
+    margin: 6em 6em 4em;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    margin: 2.5em 0 2em 0;
+}
+
+.lista__link a {
+    margin: 0 .5em;
+}
+
+.rodape__texto {
+    margin: .5em 0 1.5em 0;
+    font-size: 14px;
+    color: var(--cinza-secundario);
+    line-height: 21px;
 }
