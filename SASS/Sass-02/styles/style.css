@@ -86,4 +86,57 @@ nav ul li a:hover {
 }
 #servicos .cards .card .img-container img {
   max-width: 100%;
+}
+
+#cupom {
+  background-color: #F9E2AF;
+  padding: 4rem;
+  text-align: center;
+}
+#cupom .texto {
+  color: #210062;
+}
+#cupom .texto h2 {
+  margin: 2rem;
+  font-size: 1.7647058824rem;
+}
+#cupom .input {
+  margin: 0 auto;
+  width: 575px;
+  border-radius: 20px;
+  border: solid 4px white;
+  background-color: white;
+}
+#cupom .input input {
+  border-radius: 20px;
+  height: 40px;
+  border: none;
+  width: 540px;
+  outline: none;
+  text-align: center;
+  font-size: 26px;
+}
+#cupom .input:hover, #cupom .input:focus-within {
+  box-shadow: 1px 1px 8px 1px #009FBD;
+  outline: none;
+}
+#cupom button {
+  text-transform: uppercase;
+  margin-top: 1rem;
+  outline: none;
+  height: 40px;
+  text-align: center;
+  width: 130px;
+  background-color: #210062;
+  color: #009FBD;
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 40px;
+}
+#cupom button:hover {
+  background-color: #009FBD;
+  color: #210062;
 }/*# sourceMappingURL=style.css.map */
