@@ -1,0 +1,43 @@
+// Variaveis
+$cor-principal: blueviolet;
+$cor-secundaria: aquamarine;
+
+// Funções
+@mixin reset {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin cor-e-texto($cor-de-fundo, $cor-da-fonte) {
+    width: 50%;
+    background-color: $cor-de-fundo;
+
+    
+    // Estilização do texto da direita
+    .texto {
+        margin-top: 30%;
+        text-align: center;
+        font-size: 150px;
+        color: $cor-da-fonte;
+    }
+}
+
+body {
+    @include reset;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+
+    // Estilização do lado esquerdo do container
+    .esquerdo {
+        @include cor-e-texto($cor-principal, $cor-secundaria);
+    }
+
+    // Estilização do lado direito do container
+    .direito {
+        @include cor-e-texto($cor-secundaria, $cor-principal);
+    }
+}
+
